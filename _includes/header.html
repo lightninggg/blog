@@ -1,12 +1,4 @@
 <header class="site-header">
-<div class="profile">
-<a href="{{site.baseurl}}/">
-
-<img class="author-image" alt="site-title" src="{{site.baseurl}}/images/{{site.author.image}}">
-
-</a>
-<h1 class="author-about">{{site.author.name}}</h1>
-</div>
 <div class="wrapper">
 <nav class="site-nav">         
         <span class="menu-bar" onclick="openNav()">
@@ -14,7 +6,14 @@
         </span>
 </nav> 
 
+<div class="profile">
+<a href="{{site.baseurl}}/">
 
+	<img class="author-image" alt="site-title" src="{{site.baseurl}}/images/{{site.author.image}}">
+
+</a>
+<h1 class="author-about">{{site.author.name}}</h1>
+</div>
 
 <div class="menu-category">
 <div class="menu-item"><a class="{% if page.url == '/design/' %}active{% endif %} menu-link" href="{{site.baseurl}}/design/">Design</a></div>
